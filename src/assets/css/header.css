@@ -1,0 +1,79 @@
+.navbar>.container-fluid {
+    flex-wrap: nowrap
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #1d1d1d;
+  color: #919191;
+  z-index: 99;
+  padding: 20px 0px 20px 0px ;
+  border-bottom: 1px solid #eee
+}
+
+.navbar-fixed-top .navbar-brand {
+  padding: 0;
+  margin-left: 5%;
+  position: relative;
+}
+
+.header-slogan{
+  letter-spacing: -.03em;
+  font-family: 'Arimo-Regular';
+  font-size: 0.9em;
+  margin-left: 10%;
+  margin-top: 7px;
+}
+
+.navbar-fixed-top .navbar-right {
+  float: right;
+  font-family: arial;
+  font-size: 24px;
+  margin-right: 5px;
+  outline: solid 1px black;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-fixed-top .navbar-right #navbar-search {
+  float: left;
+  height: 40px;
+}
+
+.border-input-search {
+  border-radius: 50px;
+  padding: 5px;
+  background-color: #1d1d1d;
+  border: solid #919191 0.2px;
+}
+
+.border-input-search .input-group-prepend span {
+  background-color: #1d1d1d;
+  border: none;
+}
+
+.border-input-search .input-group-prepend img {
+  width: 20px;
+}
+
+.navbar-fixed-top .navbar-right #navbar-search .form-control {
+  background: #1d1d1d;
+  color: white;
+  border-radius: 50px;
+  border: none;
+}
+
+#navbar-menu {
+  height: 40px;
+}
+
+#navbar-menu ul li{
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+#navbar-menu ul li:first-of-type{
+  padding: 0 15px 0 0px;
+}

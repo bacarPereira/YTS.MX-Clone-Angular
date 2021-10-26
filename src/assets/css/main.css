@@ -1,0 +1,15 @@
+@import url(header.css);
+
+@font-face {
+  font-family: 'Arimo';
+  src: url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
+  url('../../assets/fonts/arimo/Arimo-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('svg'); /* Legacy iOS */
+}
+
+body{
+  font-family: 'Arimo', Arial, Helvetica,"Lucida Grande", sans-serif;
+  font-size: 16px;
+}
