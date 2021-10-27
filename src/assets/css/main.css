@@ -13,3 +13,8 @@ body{
   font-family: 'Arimo', Arial, Helvetica,"Lucida Grande", sans-serif;
   font-size: 16px;
 }
+
+
+@media (min-width: 992px) and (max-width: 1450px){
+  .hidden-md {display: none !important}
+}

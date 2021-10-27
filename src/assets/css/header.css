@@ -1,25 +1,21 @@
 .navbar>.container-fluid {
-    flex-wrap: nowrap
+  flex-wrap: nowrap;
+  margin-left: 1%;
+  margin-right: 2%;
 }
 
 .navbar-fixed-top {
   position: fixed;
-  left: 0;
   width: 100%;
   background: #1d1d1d;
   color: #919191;
   z-index: 99;
-  padding: 20px 0px 20px 0px ;
   border-bottom: 1px solid #eee
 }
 
-.navbar-fixed-top .navbar-brand {
-  padding: 0;
-  margin-left: 5%;
-  position: relative;
-}
 
-.header-slogan{
+
+.content-logo-right .header-slogan{
   letter-spacing: -.03em;
   font-family: 'Arimo-Regular';
   font-size: 0.9em;
@@ -27,19 +23,14 @@
   margin-top: 7px;
 }
 
-.navbar-fixed-top .navbar-right {
-  float: right;
-  font-family: arial;
-  font-size: 24px;
-  margin-right: 5px;
-  outline: solid 1px black;
-  display: flex;
-  align-items: center;
+.contetn-form{
+  display: inline-block;
 }
 
-.navbar-fixed-top .navbar-right #navbar-search {
-  float: left;
-  height: 40px;
+#navbar-search {
+  margin-top: 5px;
+  width: 200px;
+  height: 35px;
 }
 
 .border-input-search {
@@ -58,22 +49,53 @@
   width: 20px;
 }
 
-.navbar-fixed-top .navbar-right #navbar-search .form-control {
+#navbar-search .form-control {
   background: #1d1d1d;
   color: white;
   border-radius: 50px;
   border: none;
 }
 
-#navbar-menu {
-  height: 40px;
-}
-
-#navbar-menu ul li{
+.navbar-menu li{
   display: inline;
-  padding: 0 15px 0 15px;
+  font-family: 'Arimo-Bold', sans-serif;
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
 }
 
-#navbar-menu ul li:first-of-type{
-  padding: 0 15px 0 0px;
+.navbar-menu li:first-of-type{
+  padding: 0px 8px 0px 0px;
+}
+
+.navbar-menu li:last-of-type{
+  color: white;
+}
+
+
+.navbar-menu-mobile li{
+  display: inline;
+  padding: 0px 8px 0px 8px;
+}
+
+@media only screen and (min-width: 991px) {
+  .navbar-menu-mobile {display: none}
+}
+
+@media only screen and (max-width: 767px) {
+  .header-slogan {display: none}
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-menu {display: none}
+  .contetn-form {display: none}
+}
+
+.navbar-menu-mobile li a i{
+  color: white;
+}
+
+.item-menu-4k{
+  color: #6AC045;
+  text-decoration: none !important;
+  font-size: 22px;
 }
