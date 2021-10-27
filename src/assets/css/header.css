@@ -4,13 +4,12 @@
   margin-right: 2%;
 }
 
-.navbar-fixed-top {
-  position: fixed;
+.navbar-top {
   width: 100%;
   background: #1d1d1d;
   color: #919191;
   z-index: 99;
-  border-bottom: 1px solid #eee
+  border-bottom: 0.1pt solid #919191;
 }
 
 
@@ -98,4 +97,6 @@
   color: #6AC045;
   text-decoration: none !important;
   font-size: 22px;
+  pointer-events:none; /*remove hover efect*/
 }
+
