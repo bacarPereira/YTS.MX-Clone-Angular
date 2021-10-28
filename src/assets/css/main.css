@@ -45,7 +45,27 @@ body{
   margin-bottom: 15px;
   margin-top: 0px;
   padding-top: 50px;
+}
 
+.text-welcome-yts{
+  font-family: 'Arimo',Arial,Helvetica,"Lucida Grande",sans-serif;
+  letter-spacing: -.03em;
+  font-size: 16px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: #c3bdbd;
+}
+
+.warning-domain{
+    text-decoration: none !important;
+    color: #428bca;
+    text-decoration: none;
+}
+
+.more-rss-feed{
+  text-decoration: none !important;
+  color: #428bca;
+  text-decoration: none;
 }
 
 .star-color-green{
