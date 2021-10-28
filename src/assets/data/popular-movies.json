@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Dune",
+    "year": 2021,
+    "image": "../assets/images/movie-images/medium-cover_dune.jpg",
+    "ranking": 8.3,
+    "type":"Action",
+    "category":"Adventure"
+  },
+  {
+    "id": 2,
+    "title": "Halloween Kills",
+    "year": 2021,
+    "image": "../assets/images/movie-images/medium-cover_kill.jpg",
+    "ranking": 5.8,
+    "type":"Crime",
+    "category":"Horror"
+  },
+  {
+    "id": 3,
+    "title": "Night Teeth",
+    "year": 2021,
+    "image": "../assets/images/movie-images/medium-cover_night.jpg",
+    "ranking": 5.7,
+    "type":"Crime",
+    "category":"Horror"
+  },
+  {
+    "id": 4,
+    "title": "Stillwater",
+    "year": 2021,
+    "image": "../assets/images/movie-images/medium-cover.jpg",
+    "ranking": 6.6,
+    "type":"Crime",
+    "category":"Drama"
+  }
+]

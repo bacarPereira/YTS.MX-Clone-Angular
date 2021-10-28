@@ -14,14 +14,55 @@ body{
   font-size: 16px;
 }
 
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+      display: none
+  }
+}
+
+
 @media only screen and (max-width: 991px) {
   .hidden-sm {display: none}
+  .show-sm {display: inline-block}
+
 }
 
 
 @media (min-width: 992px) and (max-width: 1450px){
   .hidden-md {display: none !important}
 }
+
+@media (min-width: 992px){
+  .hidden-md {display: none !important}
+  .image-movie:hover{ opacity: 0.2; }
+  .browse-movie-link:hover{
+    border: 5px solid #6AC045;
+  }
+  .image-movie:hover + .browse-movie-link{
+    border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+   }
+  .image-movie:hover + .info-movie{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    transition: border .15s ease-in-out;
+    -moz-transition: border .15s ease-in-out;
+    -webkit-transition: border .15s ease-in-out;
+    font-family: 'Arimo-Bold',sans-serif;
+    margin: 1px -43px 50% -210px;
+    width: 210px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px){
+  .image-movie {
+    width: 150px;
+    height: 220px;
+  }
+}
+
 
 .content-popular-dowloads {
   background-image: url(../../assets/images/background.jpg) ,linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
@@ -57,9 +98,13 @@ body{
 }
 
 .warning-domain{
-    text-decoration: none !important;
-    color: #428bca;
-    text-decoration: none;
+  text-decoration: none !important;
+  color: #428bca;
+  text-decoration: none;
+}
+
+.warning-domain:hover{
+  color: #215a8d;
 }
 
 .more-rss-feed{
@@ -68,6 +113,57 @@ body{
   text-decoration: none;
 }
 
+.more-rss-feed:hover{
+  color: #215a8d;
+}
+
 .star-color-green{
   color: #6AC045;;
 }
+
+.browse-movie-link {
+  display: inline-block;
+  max-width: 220px;
+  border: 5px solid #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.info-movie{
+  display: none;
+}
+
+.info-movie h4{
+  font-family: 'Arimo-Regular',sans-serif;
+  letter-spacing: -.03em;
+  font-size: 28px;
+}
+
+.button-green-download2-big{
+  background: #6ac045;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  width: 130px;
+  font-family: 'Arimo-Regular',sans-serif;
+  font-size: 16px;
+  padding: 7px 0;
+  margin: 0 auto;
+}
+
+.browse-movie-title{
+  text-decoration: none !important;
+  color: white;
+  font-weight: bold;
+}
+
+.browse-movie-year{
+  text-decoration: none !important;
+  color: #919191;
+  font-weight: bold;
+}
+

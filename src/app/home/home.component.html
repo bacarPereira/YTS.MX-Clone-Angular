@@ -1,10 +1,11 @@
 <div class="content-popular-dowloads">
-  <div class="container">
+  <div class="container home-content ">
     <h1 class="title-component-dowloads hidden-sm">Download YTS YIFY movies: HD smallest size</h1>
     <p class="hidden-sm text-welcome-yts">Welcome to the official YTS.MX (.LT) website. Here you can browse and download
       YIFY movies in <br> excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. YTS Movies
       Torrents. </p>
-    <a class="hidden-sm warning-domain" href="https://yts.mx/blog/yts-mx-is-the-only-new-official-domain-for-yify-movies"
+    <a class="hidden-sm warning-domain"
+      href="https://yts.mx/blog/yts-mx-is-the-only-new-official-domain-for-yify-movies"
       title="YTS.MX is the only new official domain for YIFY Movies">
       <b>IMPORTANT - YTS.MX is the only new official domain for YIFY Movies</b>
     </a>
@@ -13,9 +14,31 @@
         <b class="mt-1"><i class="fa fa-star fa-lg star-color-green"></i>&nbsp;Popular Downloads</b>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 text-lg-end">
-        <a class="more-rss-feed" href="https://yts.mx/browse-movies/0/all/all/0/featured/0/all"><img src="../../assets/images/rss-icon.png" /><b>more...</b></a>
+        <a class="more-rss-feed" href="https://yts.mx/browse-movies/0/all/all/0/featured/0/all"><img
+            src="../../assets/images/rss-icon.png" /><b>&nbsp; more...</b></a>
       </div>
     </div>
     <hr>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of popularDownloadsMovies">
+        <a class="browse-movie-link">
+          <figure>
+            <img class="image-movie"  src="{{movie.image}}"
+              alt="{{movie.title}} {{movie.year}} download" width="210" height="315">
+            <figcaption class="info-movie hidden-sm">
+              <span class="fa fa-star star-color-green pt-3"></span>
+              <h4>{{movie.ranking}} / 10</h4>
+              <h4>{{movie.type}}</h4>
+              <h4>{{movie.category}}</h4>
+              <span class="button-green-download2-big">View Details</span>
+            </figcaption>
+          </figure>
+        </a>
+        <div class="text-center">
+          <a class="browse-movie-title d-block">{{movie.title}}</a>
+          <a class="browse-movie-year">{{movie.year}}</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
