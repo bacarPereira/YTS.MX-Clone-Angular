@@ -41,9 +41,9 @@ body{
     position: absolute;
     color: white;
     transform: translateX(0px) translateY(40px);
-    transition: border .15s ease-in-out;
-    -moz-transition: border .15s ease-in-out;
-    -webkit-transition: border .15s ease-in-out;
+    transition: border .5s ease-in-out;
+    -moz-transition: border .5s ease-in-out;
+    -webkit-transition: border .5s ease-in-out;
     font-family: 'Arimo-Bold',sans-serif;
     margin: 1px -43px 50% -210px;
     width: 210px;
