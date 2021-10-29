@@ -111,3 +111,36 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="content-dark">
+    <div class="container home-content">
+      <div class="home-movies">
+        <div class="row pt-4">
+          <h2 class="col-lg-1x col-sm-6 text-start">Upcoming YIFY Movies</h2>
+          <a class="col-lg-1x col-sm-6 text-end find-more" href="https://yts.mx/requests">Request a Movie</a>
+          <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of upcomingMovies?.data?.movies">
+            <a class="browse-movie-link">
+              <figure>
+                <img class="image-movie" src="{{movie?.medium_cover_image}}" alt="{{movie.title}} {{movie.year}} download" width="210"
+                  height="315">
+                <figcaption class="info-movie hidden-sm">
+                  <span class="fa fa-star star-color-green pt-3"></span>
+                  <h4>{{movie.rating}} / 10</h4>
+                  <h4>{{movie.genres[0]}}</h4>
+                  <h4>{{movie.genres[1]}}</h4>
+                  <span class="button-green-download2-big">View Details</span>
+                </figcaption>
+              </figure>
+            </a>
+            <div class="text-center">
+              <a class="browse-movie-title d-block">{{movie.title}}</a>
+              <a class="browse-movie-year">{{movie.year}}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -18,8 +18,13 @@ export class MoviesService {
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
-  getLatestMovies(): Observable<IMovie> {
+  getLatestMoviesHttp(): Observable<IMovie> {
     return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=date_added&order_by=desc&limit=8')
+    .pipe(catchError((error) => this.handlerError(error)));
+  }
+
+  getUpcomingMoviesHttp(): Observable<IMovie> {
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=date_added&order_by=desc&limit=4&page=4')
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
