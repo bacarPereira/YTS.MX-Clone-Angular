@@ -84,8 +84,10 @@
     <div class="container home-content">
       <div class="home-movies">
         <div class="row pt-4">
-          <h2 class="col-lg-1x col-sm-6 text-start">Latest YIFY Movies Torrents</h2>
-          <a class="col-lg-1x col-sm-6 text-end find-more " href="https://yts.mx/browse-movies">Browse All</a>
+          <div>
+            <h2 class="col-lg-6 col-sm-6 ">Latest YIFY Movies Torrents</h2>
+            <a class="col-lg-6 col-sm-6 text-end find-more " href="https://yts.mx/browse-movies">Browse All</a>
+          </div>
           <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of latestMovies?.data?.movies">
             <a class="browse-movie-link">
               <figure>
@@ -117,8 +119,10 @@
     <div class="container home-content">
       <div class="home-movies">
         <div class="row pt-4">
-          <h2 class="col-lg-1x col-sm-6 text-start">Upcoming YIFY Movies</h2>
-          <a class="col-lg-1x col-sm-6 text-end find-more" href="https://yts.mx/requests">Request a Movie</a>
+          <div>
+            <h2 class="col-lg-6 col-sm-6 text-start">Upcoming YIFY Movies</h2>
+          <a class="col-lg-6 col-sm-6 text-end find-more" href="https://yts.mx/requests">Request a Movie</a>
+          </div>
           <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of upcomingMovies?.data?.movies">
             <a class="browse-movie-link">
               <figure>

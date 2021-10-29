@@ -41,6 +41,7 @@ body{
     display: inline-block;
     position: absolute;
     color: white;
+    transform: translateX(0px) translateY(40px);
     transition: border .15s ease-in-out;
     -moz-transition: border .15s ease-in-out;
     -webkit-transition: border .15s ease-in-out;
@@ -53,7 +54,6 @@ body{
 @media (min-width: 320px) and (max-width: 991px){
   .image-movie {
     width: 150px;
-    height: 220px;
   }
 }
 
@@ -118,6 +118,7 @@ body{
 .browse-movie-link {
   display: inline-block;
   max-width: 220px;
+  max-height: 325px;
   border: 5px solid #fff;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -201,7 +202,8 @@ body{
 .home-content .home-movies h2 {
   font-size: 1.15em;
   font-weight: 700;
-  padding: 0 15px;
+  padding: 0 10px;
+  display: inline-block;
   margin-bottom: 25px;
   text-align: left;
   color: white;
