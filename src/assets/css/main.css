@@ -160,3 +160,34 @@ body{
   font-weight: bold;
 }
 
+.warning-vpn {
+  background-color: black;
+  border: 5px solid #75c74e;
+  padding: 0 35px 5px 35px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.warning-vpn .button {
+  background-color: #75c74e;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  }
+
+  .warning-vpn .button p{
+    color: white;
+    text-decoration: none;
+  }
+
+.text-blue{
+  color: #428bca;
+}
+
+.content-dark {
+  background: #171717;
+  width: 100%;
+  }

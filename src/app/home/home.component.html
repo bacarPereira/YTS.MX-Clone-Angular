@@ -1,5 +1,5 @@
-<div class="content-popular-dowloads">
-  <div class="container home-content ">
+<div class="content-popular-dowloads pb-5">
+  <div class="container">
     <h1 class="title-component-dowloads hidden-sm">Download YTS YIFY movies: HD smallest size</h1>
     <p class="hidden-sm text-welcome-yts">Welcome to the official YTS.MX (.LT) website. Here you can browse and download
       YIFY movies in <br> excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. YTS Movies
@@ -19,17 +19,18 @@
       </div>
     </div>
     <hr>
+
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of popularDownloadsMovies">
+      <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of popularDownloadsMovies?.data?.movies">
         <a class="browse-movie-link">
           <figure>
-            <img class="image-movie"  src="{{movie.image}}"
-              alt="{{movie.title}} {{movie.year}} download" width="210" height="315">
+            <img class="image-movie" src="{{movie?.medium_cover_image}}" alt="{{movie.title}} {{movie.year}} download" width="210"
+              height="315">
             <figcaption class="info-movie hidden-sm">
               <span class="fa fa-star star-color-green pt-3"></span>
-              <h4>{{movie.ranking}} / 10</h4>
-              <h4>{{movie.type}}</h4>
-              <h4>{{movie.category}}</h4>
+              <h4>{{movie.rating}} / 10</h4>
+              <h4>{{movie.genres[0]}}</h4>
+              <h4>{{movie.genres[1]}}</h4>
               <span class="button-green-download2-big">View Details</span>
             </figcaption>
           </figure>
@@ -38,6 +39,55 @@
           <a class="browse-movie-title d-block">{{movie.title}}</a>
           <a class="browse-movie-year">{{movie.year}}</a>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-3">
+    <div class="warning-vpn">
+      <div class="title">
+        <h1>Warning! Download only with VPN...</h1>
+      </div>
+      <p>
+        Downloading torrents is risky for you: your IP and leaked private data being actively tracked by your <b>ISP</b>
+        and <b>Government Agencies</b>.
+        Protect yourself from expensive lawsuits and fines NOW!
+        You must use a VPN like <b>VeePN</b>. It is the only way to download torrents fully anonymous by encrypting all
+        traffic with zero logs.
+      </p>
+      <p class="blue" style="color: #ABCC06; text-align: justify;">
+        Personal data disclosing your real identity: your IP address,
+        <span style="background: #AD0000; color: white;">
+          &nbsp;102.218.181.254&nbsp;</span>&nbsp;&nbsp;
+        is exposed, which points directly to your location in
+        <span style="background: #AD0000; color: white;">&nbsp;&nbsp;</span>.
+        You are browsing with <span style="background: #731407; color: white;">
+          &nbsp;Safari 15.0 (Mac OS X)
+          &nbsp;</span>, monitor res. <span style="background: #731407; color: white;">
+          &nbsp;2560x1440px&nbsp;</span>, <span style="background: #731407; color: white;">&nbsp;undefined-cores CPU&nbsp;</span>.
+      </p>
+      <p class="text-blue">
+        <span style="font-size: 120%">″Do not risk it! Protect yourself right now by downloading VeePN VPN″</span> -
+        William
+      </p>
+      <a>
+        <div class="button">
+          <img src="../../assets/images/download.png">
+          <p>Download VeePN VPN</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="content-dark">
+    <div class="container home-content">
+      <div class="home-movies">
+        <div class="row">
+          <h2 class="col-lg-1x col-sm-6 text-start">Latest YIFY Movies Torrents</h2>
+          <a class="col-lg-1x col-sm-6 text-end" href="https://yts.mx/browse-movies">Browse All</a>
+        </div>
+
       </div>
     </div>
   </div>

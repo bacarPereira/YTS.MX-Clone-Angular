@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { IMovie } from 'src/app/shared/Interfaces';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -12,10 +13,14 @@ export class MoviesService {
 
   constructor(private http: HttpClient) { }
 
-  getMovisPopularDowloads(): Observable<IMovie[]> {
-    return this.http.get<IMovie[]>(this.popularDowaloadsEndPonint)
+  getPopularDowloadsHttp(): Observable<IMovie> {
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=download_count&sort_by=year&order_by=desc&limit=4&page=1')
     .pipe(catchError((error) => this.handlerError(error)));
+  }
 
+  getLatestMovies(): Observable<IMovie> {
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=date_added&order_by=desc&limit=8')
+    .pipe(catchError((error) => this.handlerError(error)));
   }
 
   private handlerError (error:any){

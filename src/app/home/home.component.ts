@@ -9,12 +9,12 @@ import { IMovie } from '../shared/Interfaces';
 })
 export class HomeComponent implements OnInit {
 
-  public popularDownloadsMovies:IMovie[] = [];
+  popularDownloadsMovies:IMovie;
 
   constructor(private moviesService:MoviesService) { }
 
   ngOnInit(): void {
-    this.moviesService.getMovisPopularDowloads().subscribe(popularDownloadsResponse =>{
+    this.moviesService.getPopularDowloadsHttp().subscribe(popularDownloadsResponse =>{
       this.popularDownloadsMovies = popularDownloadsResponse;
     })
   }
