@@ -1,0 +1,27 @@
+footer {
+  background: #171717;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #2f2f2f;
+}
+
+.footer-menu li{
+  display: inline;
+  font-family: 'Arimo-Bold', sans-serif;
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
+}
+
+.footer-menu li a {
+  color: #919191;
+  text-decoration: none !important;
+}
+
+.agreement-text{
+  color: #919191;
+  text-decoration: none !important;
+}
+
+.agreement-text:hover{
+  color: #ffffff;
+}

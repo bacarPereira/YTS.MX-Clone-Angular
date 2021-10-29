@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(footer.css);
 
 @font-face {
   font-family: 'Arimo';
@@ -189,10 +190,13 @@ body{
   color: #428bca;
 }
 
-.content-dark {
+.content-dark-black {
+  background: #000;
+}
+
+.content-dark-grey {
   background: #171717;
-  width: 100%;
-  }
+}
 
 .home-content .home-movies h2 {
   font-size: 1.15em;
