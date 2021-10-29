@@ -152,12 +152,14 @@ body{
   text-decoration: none !important;
   color: white;
   font-weight: bold;
+  pointer-events:none; /*remove hover efect*/
 }
 
 .browse-movie-year{
   text-decoration: none !important;
   color: #919191;
   font-weight: bold;
+  pointer-events:none; /*remove hover efect*/
 }
 
 .warning-vpn {
@@ -190,4 +192,24 @@ body{
 .content-dark {
   background: #171717;
   width: 100%;
+  }
+
+.home-content .home-movies h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  text-align: left;
+  color: white;
+}
+
+.home-content .home-movies .find-more {
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: #919191;
+  text-decoration: none;
+  transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
   }

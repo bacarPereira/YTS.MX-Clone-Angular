@@ -29,5 +29,4 @@ export class MoviesService {
   }
      return throwError(error || 'Server error');
    }
-
 }
