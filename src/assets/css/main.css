@@ -34,8 +34,7 @@ body{
 }
 
 @media (min-width: 992px){
-  .hidden-md {display: none !important}
-  .image-movie:hover{ opacity: 0.2; }
+  .image-movie:hover{opacity: 0.2;}
   .browse-movie-link:hover{border: 5px solid #6AC045; }
   .image-movie:hover + .info-movie{
     display: inline-block;
