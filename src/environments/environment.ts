@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL_SERVER_YTS_API:'https://yts.mx/api/v2/'
+  BASE_URL_SERVER_YTS_API:'https://yts.mx/api/v2/list_movies.json'
 };
 
 /*

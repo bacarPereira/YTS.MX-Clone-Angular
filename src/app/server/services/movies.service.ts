@@ -14,17 +14,17 @@ export class MoviesService {
   constructor(private http: HttpClient) { }
 
   getPopularDowloadsHttp(): Observable<IMovie> {
-    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=download_count&sort_by=year&order_by=desc&limit=4&page=1')
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'?sort_by=download_count&sort_by=year&order_by=desc&limit=4&page=1')
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
   getLatestMoviesHttp(): Observable<IMovie> {
-    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=date_added&order_by=desc&limit=8')
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'l?sort_by=date_added&order_by=desc&limit=8')
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
   getUpcomingMoviesHttp(): Observable<IMovie> {
-    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'list_movies.json?sort_by=date_added&order_by=desc&limit=4&page=4')
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=4&page=4')
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
