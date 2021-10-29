@@ -24,7 +24,7 @@ export class MoviesService {
   }
 
   getUpcomingMoviesHttp(): Observable<IMovie> {
-    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=4&page=4')
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&quality=1080&limit=4&page=4')
     .pipe(catchError((error) => this.handlerError(error)));
   }
 

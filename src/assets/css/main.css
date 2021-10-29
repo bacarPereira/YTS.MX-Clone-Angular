@@ -3,54 +3,72 @@
 
 @font-face {
   font-family: 'Arimo';
-  src: url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
-  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff2'), /* Super Modern Browsers */
-  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
-  url('../../assets/fonts/arimo/Arimo-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('svg'); /* Legacy iOS */
+  src: url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('embedded-opentype'),
+    /* Internet Explorer */
+    url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff2'),
+    /* Super Modern Browsers */
+    url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('svg');
+  /* Legacy iOS */
 }
 
-body{
-  font-family: 'Arimo', Arial, Helvetica,"Lucida Grande", sans-serif;
+body {
+  font-family: 'Arimo', Arial, Helvetica, "Lucida Grande", sans-serif;
   font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {
   .hidden-xs {
-      display: none
+    display: none
   }
 }
 
 
 @media only screen and (max-width: 991px) {
-  .hidden-sm {display: none}
-  .show-sm {display: inline-block}
+  .hidden-sm {
+    display: none
+  }
+
+  .show-sm {
+    display: inline-block
+  }
 
 }
 
 
-@media (min-width: 992px) and (max-width: 1450px){
-  .hidden-md {display: none !important}
+@media (min-width: 992px) and (max-width: 1450px) {
+  .hidden-md {
+    display: none !important
+  }
 }
 
-@media (min-width: 992px){
-  .image-movie:hover{opacity: 0.2;}
-  .browse-movie-link:hover{border: 5px solid #6AC045; }
-  .image-movie:hover + .info-movie{
+@media (min-width: 992px) {
+  .image-movie:hover {
+    opacity: 0.2;
+  }
+
+  .browse-movie-link:hover {
+    border: 5px solid #6AC045;
+  }
+
+  .image-movie:hover+.info-movie {
     display: inline-block;
     position: absolute;
     color: white;
     transform: translateX(0px) translateY(40px);
-    transition: border .5s ease-in-out;
-    -moz-transition: border .5s ease-in-out;
-    -webkit-transition: border .5s ease-in-out;
-    font-family: 'Arimo-Bold',sans-serif;
+    transition: border .25s ease-in-out;
+    -moz-transition: border .25s ease-in-out;
+    -webkit-transition: border .25s ease-in-out;
+    font-family: 'Arimo-Bold', sans-serif;
     margin: 1px -43px 50% -210px;
     width: 210px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 991px){
+@media (min-width: 320px) and (max-width: 991px) {
   .image-movie {
     width: 150px;
   }
@@ -58,7 +76,7 @@ body{
 
 
 .content-popular-dowloads {
-  background-image: url(../../assets/images/background.jpg) ,linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-image: url(../../assets/images/background.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -66,23 +84,23 @@ body{
 
 }
 
-.content-popular-dowloads{
+.content-popular-dowloads {
   color: white;
 }
 
-.title-component-dowloads{
+.title-component-dowloads {
   font-size: 2.75em;
   font-weight: 500;
   color: white;
-  font-family: 'Arimo-Bold',sans-serif;
-  text-shadow: 0 2px 2px rgba(0,0,0,.4);
+  font-family: 'Arimo-Bold', sans-serif;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .4);
   margin-bottom: 15px;
   margin-top: 0px;
   padding-top: 50px;
 }
 
-.text-welcome-yts{
-  font-family: 'Arimo',Arial,Helvetica,"Lucida Grande",sans-serif;
+.text-welcome-yts {
+  font-family: 'Arimo', Arial, Helvetica, "Lucida Grande", sans-serif;
   letter-spacing: -.03em;
   font-size: 16px;
   text-align: center;
@@ -90,28 +108,29 @@ body{
   color: #c3bdbd;
 }
 
-.warning-domain{
+.warning-domain {
   text-decoration: none !important;
   color: #428bca;
   text-decoration: none;
 }
 
-.warning-domain:hover{
+.warning-domain:hover {
   color: #215a8d;
 }
 
-.more-rss-feed{
+.more-rss-feed {
   text-decoration: none !important;
   color: #428bca;
   text-decoration: none;
 }
 
-.more-rss-feed:hover{
+.more-rss-feed:hover {
   color: #215a8d;
 }
 
-.star-color-green{
-  color: #6AC045;;
+.star-color-green {
+  color: #6AC045;
+  ;
 }
 
 .browse-movie-link {
@@ -124,17 +143,27 @@ body{
   -moz-border-radius: 4px;
 }
 
-.info-movie{
+.info-movie {
   display: none;
 }
 
-.info-movie h4{
-  font-family: 'Arimo-Regular',sans-serif;
+.browse-movie-link figure img.quality-banner {
+  position: relative;
+  top: -310px;
+  display: block;
+  max-width: 100%;
+  left: 0;
+  width: 120px;
+  height: 90px;
+}
+
+.info-movie h4 {
+  font-family: 'Arimo-Regular', sans-serif;
   letter-spacing: -.03em;
   font-size: 28px;
 }
 
-.button-green-download2-big{
+.button-green-download2-big {
   background: #6ac045;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -143,24 +172,26 @@ body{
   font-weight: bold;
   color: #fff;
   width: 130px;
-  font-family: 'Arimo-Regular',sans-serif;
+  font-family: 'Arimo-Regular', sans-serif;
   font-size: 16px;
   padding: 7px 0;
   margin: 0 auto;
 }
 
-.browse-movie-title{
+.browse-movie-title {
   text-decoration: none !important;
   color: white;
   font-weight: bold;
-  pointer-events:none; /*remove hover efect*/
+  pointer-events: none;
+  /*remove hover efect*/
 }
 
-.browse-movie-year{
+.browse-movie-year {
   text-decoration: none !important;
   color: #919191;
   font-weight: bold;
-  pointer-events:none; /*remove hover efect*/
+  pointer-events: none;
+  /*remove hover efect*/
 }
 
 .warning-vpn {
@@ -170,7 +201,7 @@ body{
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
 .warning-vpn .button {
   background-color: #75c74e;
@@ -179,14 +210,14 @@ body{
   margin-right: auto;
   margin-top: 15px;
   border-radius: 5px;
-  }
+}
 
-  .warning-vpn .button p{
-    color: white;
-    text-decoration: none;
-  }
+.warning-vpn .button p {
+  color: white;
+  text-decoration: none;
+}
 
-.text-blue{
+.text-blue {
   color: #428bca;
 }
 
@@ -217,4 +248,4 @@ body{
   transition: color .25s ease-in-out;
   -moz-transition: color .25s ease-in-out;
   -webkit-transition: color .25s ease-in-out;
-  }
+}

@@ -25,6 +25,7 @@ export interface IMovieItem{
     slug: string;
     year: number;
     rating:number;
+    runtime:number;
     genres:string[];
     summary:string;
     description_full:string;
@@ -36,7 +37,7 @@ export interface IMovieItem{
     medium_cover_image: string;
     large_cover_image: string;
     state: string;
-    torrents: ITorrent;
+    torrents: ITorrent[];
     date_uploaded: Date;
 }
 
