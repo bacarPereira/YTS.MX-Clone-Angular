@@ -1,12 +1,8 @@
-<div class="container-fluid">
   <div class="content-dark-grey">
-    <div class="container home-content">
+    <div class="container">
       <div class="home-movies">
         <div class="row pt-4">
-          <div>
-            <h2 class="col-lg-6 col-sm-6 text-start">Upcoming YIFY Movies</h2>
-            <a class="col-lg-6 col-sm-6 text-end find-more" href="https://yts.mx/requests">Request a Movie</a>
-          </div>
+          <h2 class="tile-content text-center mb-3">24h YIFY Trending Movies</h2>
           <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of treadingMovies?.data?.movies">
             <a class="browse-movie-link">
               <figure>
@@ -26,11 +22,8 @@
               <a class="browse-movie-title d-block">{{movie.title}}</a>
               <a class="browse-movie-year">{{movie.year}}</a>
             </div>
-            <progress value="{{movie.runtime}}" max="100" style="width: 55%; height:15px;"></progress>
-            <span class="text-white">{{movie.torrents[1]?.quality}}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
