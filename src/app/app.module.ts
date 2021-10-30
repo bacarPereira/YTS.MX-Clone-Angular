@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { MoviesService } from './server/services/movies.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SpinerService } from './core/spiner/spiner.service';
+import { InterceptorInterceptor } from './core/interceptor/interceptor.interceptor';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SpinerService } from './core/spiner/spiner.service';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [MoviesService,SpinerService],
+  providers: [MoviesService,SpinerService,
+    {provide: HTTP_INTERCEPTORS,useClass: InterceptorInterceptor,multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
