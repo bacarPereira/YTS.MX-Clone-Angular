@@ -1,26 +1,27 @@
 # YtsMx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+This project use the official **Yts.mx** API and shows several core features of Angular including:
 
-## Development server
+- Components
+- Data Binding
+- Communication between components
+- Services
+- Routing
+- HttpInterceptor
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<img width="2560" alt="Captura de ecrã 2021-10-29, às 13 28 08" src="https://user-images.githubusercontent.com/43761389/139529465-5bae5808-3c7b-4249-a888-1418abcb5c75.png">
 
-## Code scaffolding
+<img width="2560" alt="Captura de ecrã 2021-10-29, às 13 28 39" src="https://user-images.githubusercontent.com/43761389/139529494-deecb107-767f-47b7-a2bc-d802f5629f95.png">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Running the Project Locally
+1. Install the Angular CLI
+   > npm install -g @angular/cli
+2. Run npm install at the root of this project
+3. Run ng serve -o for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 🔥
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
