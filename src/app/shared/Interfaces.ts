@@ -1,3 +1,11 @@
+export class CMovie implements IMovie{
+  status:string;
+  data:IMovieData;
+  constructor(status:string){
+    this.status = status;
+  }
+}
+
 export interface IMovie{
   status:string;
   data:IMovieData;
