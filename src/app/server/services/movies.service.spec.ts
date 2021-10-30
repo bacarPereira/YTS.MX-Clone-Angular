@@ -27,9 +27,9 @@ describe('MoviesService', () => {
   });
 
   it('should getPopularDowloadsHttp',() =>{
-    service.getPopularDowloadsHttp().subscribe((responsePopularDowloads:IMovie)=>{
-      expect(responsePopularDowloads.status).toEqual('ok');
-      expect(responsePopularDowloads).toBeTruthy();
+    service.getPopularDowloadsHttp().subscribe((responseMovieData:IMovie)=>{
+      expect(responseMovieData.status).toEqual('ok');
+      expect(responseMovieData).toBeTruthy();
     });
     movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'?sort_by=download_count&sort_by=year&order_by=desc&limit=4&page=1');
     movieMockRequest.flush(new CMovie('ok'));
@@ -37,9 +37,9 @@ describe('MoviesService', () => {
   });
 
   it('should getLatestMoviesHttp',() =>{
-    service.getLatestMoviesHttp().subscribe((responsePopularDowloads:IMovie)=>{
-      expect(responsePopularDowloads.status).toEqual('ok');
-      expect(responsePopularDowloads).toBeTruthy();
+    service.getLatestMoviesHttp().subscribe((responseMovieData:IMovie)=>{
+      expect(responseMovieData.status).toEqual('ok');
+      expect(responseMovieData).toBeTruthy();
     });
     movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'l?sort_by=date_added&order_by=desc&limit=8');
     movieMockRequest.flush(new CMovie('ok'));
@@ -47,11 +47,21 @@ describe('MoviesService', () => {
   });
 
   it('should getUpcomingMoviesHttp',() =>{
-    service.getUpcomingMoviesHttp().subscribe((responsePopularDowloads:IMovie)=>{
-      expect(responsePopularDowloads.status).toEqual('ok');
-      expect(responsePopularDowloads).toBeTruthy();
+    service.getUpcomingMoviesHttp().subscribe((responseMovieData:IMovie)=>{
+      expect(responseMovieData.status).toEqual('ok');
+      expect(responseMovieData).toBeTruthy();
     });
     movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&quality=1080&limit=4&page=4');
+    movieMockRequest.flush(new CMovie('ok'));
+    expect(movieMockRequest.request.method).toEqual('GET');
+  });
+
+  it('should getTreadingMoviesHttp',() =>{
+    service.getTreadingMoviesHttp().subscribe((responseMovieData:IMovie)=>{
+      expect(responseMovieData.status).toEqual('ok');
+      expect(responseMovieData).toBeTruthy();
+    });
+    movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=4&page=5');
     movieMockRequest.flush(new CMovie('ok'));
     expect(movieMockRequest.request.method).toEqual('GET');
   });

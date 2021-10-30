@@ -28,6 +28,11 @@ export class MoviesService {
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
+  getTreadingMoviesHttp(): Observable<IMovie> {
+    return this.http.get<IMovie>(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=4&page=5')
+    .pipe(catchError((error) => this.handlerError(error)));
+  }
+
   handlerError (error:any){
     if (error.error instanceof Error) {
       return throwError(error.error.message);

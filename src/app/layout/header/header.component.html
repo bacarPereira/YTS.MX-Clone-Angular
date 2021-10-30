@@ -20,16 +20,16 @@
         <div class="d-inline-block">
           <ul class="navbar-menu ms-0 ps-2">
             <li routerLinkActive="active">
-              <a [routerLink]="['/home']"><b>Home</b></a>
+              <a class="default-anchor" [routerLink]="['/home']"><b>Home</b></a>
             </li>
             <li>
               <a class="item-menu-4k">4K</a>
             </li>
-            <li>
-              <a>Treading</a>
+            <li routerLinkActive="active">
+              <a class="default-anchor" [routerLink]="['/treading']">Treading</a>
             </li>
             <li>
-              <a>Browse Movies</a>
+              <a class="default-anchor">Browse Movies</a>
             </li>
             <li>
               <a><span>Login</span> | <span>Register</span></a>
@@ -41,7 +41,7 @@
                 <i class="fa fa-search fa-lg"></i>
               </a>
             </li>
-            <li>
+            <li routerLinkActive="active">
               <a class="item-menu-4k"><b>4K</b></a>
             </li>
             <li>
