@@ -28,7 +28,7 @@ export class MoviesService {
     .pipe(catchError((error) => this.handlerError(error)));
   }
 
-  private handlerError (error:any){
+  handlerError (error:any){
     if (error.error instanceof Error) {
       return throwError(error.error.message);
   }
