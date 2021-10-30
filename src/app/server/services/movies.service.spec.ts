@@ -62,6 +62,4 @@ describe('MoviesService', () => {
       expect(error.message).toEqual('Bad request');
     })
   });
-
-
 });
