@@ -249,3 +249,9 @@ body {
   -moz-transition: color .25s ease-in-out;
   -webkit-transition: color .25s ease-in-out;
 }
+
+.tile-content {
+  color: #6ac045;
+  font-size: 1.4em;
+  margin-top: 10px;
+  }

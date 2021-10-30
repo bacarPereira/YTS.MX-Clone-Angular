@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SpinerService } from '../core/spiner/spiner.service';
-import { MoviesService } from '../server/services/movies.service';
-import { IMovie } from '../shared/Interfaces';
+import { MoviesService } from '../../server/services/movies.service';
+import { IMovie } from '../../shared/Interfaces';
 
 @Component({
   selector: 'app-home',

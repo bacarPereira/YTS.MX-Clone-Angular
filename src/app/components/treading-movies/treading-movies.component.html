@@ -1,0 +1,29 @@
+  <div class="content-dark-grey">
+    <div class="container">
+      <div class="home-movies">
+        <div class="row pt-4">
+          <h2 class="tile-content text-center mb-3">24h YIFY Trending Movies</h2>
+          <div class="col-lg-3 col-md-3 col-sm-3 mb-1" *ngFor="let movie of treadingMovies?.data?.movies">
+            <a class="browse-movie-link">
+              <figure>
+                <img class="image-movie" src="{{movie?.medium_cover_image}}"
+                  alt="{{movie.title}} {{movie.year}} download" width="210" height="315">
+                <figcaption class="info-movie hidden-sm">
+                  <span class="fa fa-star star-color-green pt-3"></span>
+                  <h4>{{movie.rating}} / 10</h4>
+                  <h4>{{movie.genres[0]}}</h4>
+                  <h4>{{movie.genres[1]}}</h4>
+                  <span class="button-green-download2-big">View Details</span>
+                </figcaption>
+              <img class="quality-banner" src="../../assets/images/banner-quality/banner1080p.png" alt="{{movie.title_long}}" width="118" height="91">
+              </figure>
+            </a>
+            <div class="text-center">
+              <a class="browse-movie-title d-block">{{movie.title}}</a>
+              <a class="browse-movie-year">{{movie.year}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

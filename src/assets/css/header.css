@@ -60,10 +60,14 @@
   padding: 0px 6px 0px 6px;
 }
 
-.navbar-menu li.active>a {
+.navbar-menu .default-anchor{
+  color: #919191;
+  text-decoration: none !important;
+}
+
+.navbar-menu li.active >a {
   color: white;
   text-decoration: none !important;
-  pointer-events:none;
 }
 
 .navbar-menu li:first-of-type{
