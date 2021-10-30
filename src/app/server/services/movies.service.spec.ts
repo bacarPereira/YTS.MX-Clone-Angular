@@ -61,7 +61,7 @@ describe('MoviesService', () => {
       expect(responseMovieData.status).toEqual('ok');
       expect(responseMovieData).toBeTruthy();
     });
-    movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=4&page=5');
+    movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'?sort_by=date_added&order_by=desc&limit=20&page=5');
     movieMockRequest.flush(new CMovie('ok'));
     expect(movieMockRequest.request.method).toEqual('GET');
   });

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/server/services/movies.service';
+import { IMovie } from 'src/app/shared/Interfaces';
 
 @Component({
   selector: 'app-treading-movies',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreadingMoviesComponent implements OnInit {
 
-  constructor() { }
+  treadingMovies:IMovie;
+
+  constructor(private moviesService:MoviesService) { }
 
   ngOnInit(): void {
+    this.getTreadingMoviesHttp();
+  }
+
+  getTreadingMoviesHttp(){
+    this.moviesService.getTreadingMoviesHttp().subscribe(treadingMoviesResponse =>{
+      this.treadingMovies = treadingMoviesResponse;
+    })
   }
 
 }
