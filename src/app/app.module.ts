@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { MoviesService } from './server/services/movies.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './layout/footer/footer.component';
+import { SpinerService } from './core/spiner/spiner.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [MoviesService],
+  providers: [MoviesService,SpinerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
