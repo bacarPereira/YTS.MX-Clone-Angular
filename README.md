@@ -16,7 +16,7 @@ This project use the official **Yts.mx** API and shows several core features of 
 ## Running the Project Locally
 1. Install the Angular CLI
    > npm install -g @angular/cli
-2. Run npm install at the root of this project
+2. Run `npm install` at the root of this project
 3. Run ng serve -o for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 🔥
 
 ## Running unit tests
