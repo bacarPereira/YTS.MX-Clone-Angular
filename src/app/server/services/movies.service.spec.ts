@@ -36,5 +36,15 @@ describe('MoviesService', () => {
     expect(movieMockRequest.request.method).toEqual('GET');
   });
 
+  it('should getLatestMoviesHttp',() =>{
+    service.getLatestMoviesHttp().subscribe((responsePopularDowloads:IMovie)=>{
+      expect(responsePopularDowloads.status).toEqual("ok");
+      expect(responsePopularDowloads).toBeTruthy();
+    });
+    movieMockRequest = httpTestingController.expectOne(environment.BASE_URL_SERVER_YTS_API+'l?sort_by=date_added&order_by=desc&limit=8');
+    movieMockRequest.flush(new CMovie("ok"));
+    expect(movieMockRequest.request.method).toEqual('GET');
+  });
+
 
 });
