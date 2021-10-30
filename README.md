@@ -8,6 +8,7 @@ This project use the official **Yts.mx** API and shows several core features of 
 - Services
 - Routing
 - HttpInterceptor
+- rxjs
 
 <img width="2560" alt="Captura de ecrã 2021-10-29, às 13 28 08" src="https://user-images.githubusercontent.com/43761389/139529465-5bae5808-3c7b-4249-a888-1418abcb5c75.png">
 
